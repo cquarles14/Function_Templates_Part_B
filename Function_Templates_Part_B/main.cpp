@@ -18,7 +18,8 @@ T half(T num)
 }
 int half(int num)
 {
-    return round(static_cast<double>(num / 2));
+    float tempNum = static_cast<float>(num);
+    return round(tempNum / 2);
 }
 
 int main()
