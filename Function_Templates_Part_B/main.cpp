@@ -4,4 +4,30 @@
 // Function Templates Part B
 
 
+#include <iostream>
+#include <algorithm>
+#include <iomanip>
+#include <math.h>
 
+using namespace std;
+
+template <typename T>
+T half(T num)
+{
+    return num / 2;
+}
+int half(int num)
+{
+    return round(static_cast<double>(num / 2));
+}
+
+int main()
+{
+    double a = 7.0;
+    float b = 5.0;
+    int c = 3;
+    
+    cout << half(a) << endl;
+    cout << half(b) << endl;
+    cout << half(c) << endl;
+}
